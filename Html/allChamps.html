@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/global.css">
+    <title>All Champions</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">LEAGUE<span class="gold">TRACKER</span></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./Html/Champions">CHAMPIONS</a></li>
+                <li><a href="./Html/Stats">STATS</a></li>
+                <li><a href="./Html/Pages">PAGES</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="login-btn">LOGIN</button>
+        </div>
+    </header>
+
+
+
+    <main class="container">
+        <div class="section-header">
+            <h1>ALL CHAMPIONS</h1>
+        </div>
+         <div class="role-tabs-nav">
+                 <ul>
+                    <li class="role-item">
+                        <button id="all" class="role active">All</button>
+
+                    </li>
+                    
+					<li class="role-item" >
+						<button id="1-tab" class="role">Mage</button>
+					</li>
+
+					<li class="role-item" >
+						<button id="2-tab" class="role">Jungle</button>
+					</li>
+
+					<li class="role-item">
+						<button id="3-tab" class="role">Mid</button>
+					</li>
+
+					<li class="role-item">
+						<button id="4-tab" class="role">Adc</button>
+					</li>
+                    <li class="role-item">
+						<button id="4-tab" class="role">Support</button>
+					</li>
+			    </ul>
+            </div>
+
+        <div class="match-gallery">
+            <div class="match-card">
+                <div class="card-img">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg" alt="Aatrox">
+                    <div class="rating">8.4</div>
+                </div>
+                <h3>The World Ender</h3>
+                <p class="category">Top, Fighter</p>
+            </div>
+
+            <div class="match-card">
+                <div class="card-img">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="Ahri">
+                    <div class="rating">7.1</div>
+                </div>
+                <h3>The Nine-Tailed Fox</h3>
+                <p class="category">Mid, Mage</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        Copyright 2026
+    </footer>
+
+    <script src="../Js/getAllChamps.js"></script>
+</body>
+</html>

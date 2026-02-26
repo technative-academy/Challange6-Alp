@@ -1,10 +1,10 @@
-const loginButton = document.querySelector(".login-btn");
-
-
-loginButton.addEventListener("click" ,getLoginPage);
-
-
-function getLoginPage(){
-    console.log("I just clicked to login button");
-    window.location.href = "./Html/loginPage.html";
+async function saveMatchToDB(matchData) {
+    const response = await fetch('http://localhost:5000/api/matches', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(matchData)
+    });
+    
+    const result = await response.json();
+    console.log(result.message);
 }

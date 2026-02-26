@@ -1,7 +1,9 @@
 @import url('./variables.css');
+
 @import url('./style.css');
 @import url('./home.css');
 @import url('./champs.css');
+
 
 @media (max-width: 768px) {
   :root {

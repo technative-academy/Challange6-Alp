@@ -23,6 +23,18 @@ app.get('/api/matches', async (req, res) => {
 });
 
 
+app.delete('/api/matches/:id', async (req, res) => {
+    await Match.findByIdAndDelete(req.params.id);
+    res.json({ message: "Maç silindi!" });
+});
+
+
+app.put('/api/matches/:id', async (req, res) => {
+    const updatedMatch = await Match.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.json(updatedMatch);
+});
+
+
 app.post('/api/matches', async (req, res) => {
     const newMatch = new Match(req.body);
     await newMatch.save();

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../Css/matchSave.css">
+    <link rel="stylesheet"  href="../Css/global.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">LEAGUE<span class="gold">TRACKER</span></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./allChamps.html">CHAMPIONS</a></li>
+                <li><a href="./Stats">STATS</a></li>
+                <li><a href="./Pages">PAGES</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+            </div>
+            <button class="login-btn">LOGIN</button>
+        </div>
+    </header>
+    <div id="matchModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Save Match: <span id="selectedChamp"></span></h2>
+        
+            <form id="matchForm">
+                <input type="hidden" id="champName"> <label>Opponent Champion:</label>
+                <input type="text" id="opponent" placeholder="Örn: Zed" required>
+            
+                <label>KDA:</label>
+                <input type="text" id="kda" placeholder="Örn: 10/2/5" required>
+            
+                <label>Sonuç:</label>
+                <select id="result">
+                    <option value="Victory">Victory</option>
+                    <option value="Defeat">Defeat</option>
+                </select>
+            
+                <button type="submit" class="save-btn">Save</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="../Js/match.js"></script>
+</html>

@@ -1,10 +1,6 @@
-async function saveMatchToDB(matchData) {
-    const response = await fetch('http://localhost:5000/api/matches', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(matchData)
-    });
+async function loadMatchHistory() {
+    const res = await fetch('http://localhost:5000/api/matches');
+    const matches = await res.json();
+    console.log("Veritabanındaki Maçlar:", matches);
     
-    const result = await response.json();
-    console.log(result.message);
 }

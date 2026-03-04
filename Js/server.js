@@ -25,7 +25,7 @@ app.get('/api/matches', async (req, res) => {
 
 app.delete('/api/matches/:id', async (req, res) => {
     await Match.findByIdAndDelete(req.params.id);
-    res.json({ message: "Maç silindi!" });
+    res.json({ message: "Match is deleted!" });
 });
 
 
